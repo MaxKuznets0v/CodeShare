@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeShare</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+        body {
+            background-color: #d4d4d4;
+            font-family: "Fira Code", monospace;
+            font-size: 14px;
+        }
+
+        code {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 th:text="'Author: ' + ${author}"></h1>
+    </div>
+    <pre><code th:text="${content}"></code></pre>
+</body>
+</html>
