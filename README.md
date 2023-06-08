@@ -1,5 +1,5 @@
 # CodeShare
-JetBrains plugin for sharing the code.
+JetBrains IDEA plugin for sharing the code.
 
 Features:
 - Spring, JPA, Security, Thymeleaf, JUnit.
