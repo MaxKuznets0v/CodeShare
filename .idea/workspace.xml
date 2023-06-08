@@ -7,7 +7,9 @@
     <list default="true" id="b398ec8b-c3e6-4e3a-940d-65b95747e605" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.run/Run IDE with Plugin.run.xml" afterDir="false" />
@@ -18,12 +20,56 @@
       <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/build.gradle.kts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/backend/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/backend/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/backend/gradlew" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/backend/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/BackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/config/DIConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/config/DataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/controller/SnippetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/ISnippet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/ISnippetFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/IUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/IUserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/Snippet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/SnippetFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/SnippetRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/UserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/domain/UserRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/encoder/IPasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/encoder/PasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/repository/SnippetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/service/SnippetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/ui/SnippetView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/usecase/AuthorizeUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/usecase/CreateSnippet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/usecase/CreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/java/com/itmo/backend/usecase/GetSnippetById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/main/resources/templates/snippet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/test/java/com/itmo/backend/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/test/java/com/itmo/backend/PasswordEncoderTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/test/java/com/itmo/backend/SnippetServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/src/test/java/com/itmo/backend/UserServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/action/ShareLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/action/ShareSnippet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/action/ShareTelegram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/utils/CodeShareService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/utils/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/utils/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itmo/codeshare/window/SnippetListWindowFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIconWindow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
